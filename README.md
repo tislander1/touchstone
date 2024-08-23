@@ -29,15 +29,15 @@ Touchstone manipulations
 - - #convert a two-port t-parameter to an s-parameter
 - def _two_port_S2ABCD(self, s, Z0=50):
 - - #convert a two-port t-parameter to a z-parameter
-- - # Ludwig & Bretchko, Appendix D
+- - #Ludwig & Bretchko, Appendix D
 - def _two_port_ABCD2S(self, A, Z0=50):
 - - #convert a two-port t-parameter to a z-parameter
-- - # Ludwig & Bretchko, Appendix D
+- - #Ludwig & Bretchko, Appendix D
 - def _four_port_single2diff(self, s):
 - - #Note, not properly tested!
 - - #input should be in the format
-- - # port 1 ------ port2
-- - # port 3 ------ port4
+- - #port 1 ------ port2
+- - #port 3 ------ port4
 - - #output will be in the format
 - - #diff pair 1 ========= diff pair 2
 - - #Example call:      sdd, scd, sdc, scc = _four_port_single2diff(sparam4)
@@ -47,15 +47,15 @@ Touchstone manipulations
 - - #Convert single ended sparams to balanced mode.
 - - #Example call:       sdd, sdc, scd, scc = single_to_balanced_sparams(sparam)
 - - #The port assignment for the input should be:
-- - #       Port 1 ------- Port 2
-- - #       Port 3 ------- Port 4
-- - #       Port 5 ------- Port 6
-- - #       Port 7 ------- Port 8
-- - #       Etc.
+- - #.       Port 1 ------- Port 2
+- - #.       Port 3 ------- Port 4
+- - #.       Port 5 ------- Port 6
+- - #.       Port 7 ------- Port 8
+- - #.       Etc.
 - - #The port assignment for the output will be:
-- - #       Diff port 1 ====== Diff port 2
-- - #       Diff port 3 ====== Diff port 4
-- - #       Etc.
+- - #.       Diff port 1 ====== Diff port 2
+- - #.       Diff port 3 ====== Diff port 4
+- - #.       Etc.
 - - #Each of the four output matrices (sdd, sdc, scd, scc) will have half the number of ports as the input.
 - def _convert_nport_from_convert_twoport(self, param, func):
 - def convert_S_to_T(self, sparam):
