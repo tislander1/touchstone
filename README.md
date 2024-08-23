@@ -1,7 +1,7 @@
 # touchstone
 Touchstone manipulations
 - def read_touchstone(self, filename):
-        - #returns freq, S
+-- #returns freq, S
 - def downsample_sparam(self, freq_list, sparam, downsample_ratio=2)
 - def construct_sparam(self, list_of_sparam_vectors):
         #make a single list of N-port s-parameters vectors
